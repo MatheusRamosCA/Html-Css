@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Visited se refere a algo que já foi acessado anteriormente*/
+        a:visited {
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        /*Active é quando você vai ativar algo como clicar em um link*/
+        a:active{
+            color: yellow;
+        }
+        /*
+        Pseudo-classe é o estado que define o elemento dentro do html
+        */
+
+        #especial {
+            background-color: black;
+        }
+        #especial::before {
+            content: '-';
+        }
+        #especial::after {
+            content: '<';
+        }
+        /*
+        Pseudo-elemento ele age diretamente no conteúdo podendo ser nas classes, nos ids...
+        */
+
+        /*Relembrando: Seletores personalizados.
+
+        # id
+        . class
+        > children
+        :pseudo-classe
+        ::pseudo-elemento
+
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="author">Repositório git hub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="author" id="especial">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="author">Site do cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

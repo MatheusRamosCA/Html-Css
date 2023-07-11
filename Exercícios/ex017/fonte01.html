@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc.
+
+            Medidas relativas: em, ex, rem, vw, vh, %.
+
+            -16px = 1em (No caso são os dois recomendados para tamanho de texto.)
+            */
+            font-size: 1em;
+
+            /* 
+            Peso das fontes: lighter, normal, bold, bolder.
+            Pode fazer de números também: 100 a 900
+            */
+            font-weight: lighter;
+
+            /*
+            Para colocar sublinhado, ítalico e negrito.
+            */
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        h1 {
+            /*
+            Você pode usar todas essas configurações em uma só usando o shorthand font.
+            Sequência: font-style > font-weight > font-size > font-family.
+            Exemplo:
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            */
+            font: oblique bolder 2em 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum perferendis ipsam similique, voluptatibus quos sit ex ullam quae corporis alias tempora, iste amet repudiandae ipsa molestiae nisi asperiores dolore nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur voluptas corrupti, qui laborum suscipit amet. Fuga autem quas atque placeat molestias accusamus unde, minus quod! Similique sapiente ad veniam natus.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur architecto sint molestias illum sed fugiat cumque porro voluptatem, dolore, natus velit at iure. Id consequatur, eos ullam iusto sunt ad?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem voluptatum quasi laudantium atque vel, nam, dolorum nesciunt totam corporis obcaecati aliquid accusamus magni hic! Sed suscipit quod ullam dolorem.</p>
+</body>
+</html>
