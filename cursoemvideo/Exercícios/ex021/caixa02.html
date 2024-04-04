@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgba(211, 211, 211, 0.164);
+            padding: 3px;
+            /*
+            Box shadow: deslocamento horizontal, vertical, (embaçamento=blur), espalhamento e sombra.
+            Existe um atalho no dev tools no google que auxilia a criação do box-shadow.
+            */
+            box-shadow: 2px 2px 4px 1px black; 
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: none;
+            margin-right: 30px; 
+        }
+        nav:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*
+            No border-radius você também pode usar a ferramenta do google.
+            */
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgba(211, 211, 211, 0.363);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body> 
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Links ou abas do menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--Seção-->
+            <p>Esportes, política e tecnologia.</p>
+        </section>
+        <section id="noticias">
+            <article> <!--Artigo-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure velit minus quo cum, labore reiciendis laudantium dignissimos, quidem nisi qui voluptatibus molestias nobis repudiandae iste atque et doloremque ducimus!</p>
+                <aside> <!--Conteúdo periférico do artigo, etc...-->    
+                    <p>Artigo escrito por Matheus Ramos</p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido por Matheus</p>
+    </footer>
+    <div id="bola">
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "UTF 8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    background-color: lightgray;
+}
+header {
+    background-color: gray;
+}
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+i#burguer {
+    display: block;
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+i#burguer:hover{
+    background-color: white;
+    color: black;
+}
+/*No caso para você fazer um menu hambúrguer, você precisa colocar o atributo display do menu no none e o burguer como está acima. Vai ser necessário utilizar o javascript para terminar o processo.*/
+menu{
+    display: none;
+}
+menu > ul {
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(71, 71, 71);
+    border-top: 1px 2px solid rgb(85, 83, 83);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2 {
+    padding-bottom: 20px;
+}
+article > p {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
